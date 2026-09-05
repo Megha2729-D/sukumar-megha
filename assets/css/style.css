@@ -927,7 +927,8 @@ section {
 /* ===== COUNTDOWN ===== */
 
 #countdown-section {
-    background: linear-gradient(135deg, var(--maroon) 0%, var(--maroon-dark) 100%);
+    /* background: linear-gradient(135deg, var(--maroon) 0%, var(--maroon-dark) 100%); */
+    background: linear-gradient(135deg, #feddc8 0%, #f3d1bc 100%);
     text-align: center;
     padding: 60px 20px;
     z-index: 1;
@@ -937,11 +938,11 @@ section {
 }
 
 #countdown-section .section-title {
-    color: var(--gold-light);
+    color: var(--maroon-dark);
 }
 
 #countdown-section .section-tag {
-    color: var(--gold-pale);
+    color: var(--maroon);
 }
 
 .countdown-grid {
@@ -953,8 +954,8 @@ section {
 }
 
 .countdown-box {
-    background: rgba(255, 255, 255, 0.07);
-    border: 1px solid rgba(201, 160, 74, 0.3);
+    background: #ffffff12;
+    border: 1px solid #c9a04a4d;
     border-radius: 16px;
     padding: 1.5rem 2rem;
     min-width: 100px;
@@ -965,7 +966,7 @@ section {
     font-family: 'Cinzel', serif;
     font-size: 3rem;
     font-weight: 600;
-    color: var(--gold-light);
+    color: var(--maroon-dark);
     display: block;
     line-height: 1;
     text-shadow: 0 0 20px rgba(232, 201, 122, 0.3);
@@ -975,7 +976,7 @@ section {
     font-family: 'Raleway', sans-serif;
     font-size: 0.7rem;
     letter-spacing: 0.2em;
-    color: var(--gold-pale);
+    color: var(--maroon);
     text-transform: uppercase;
     margin-top: 8px;
     display: block;
@@ -1220,7 +1221,7 @@ footer .footer-names {
     }
 
     .countdown-box {
-        min-width: 70px;
+        min-width: 10px;
         padding: .8rem;
     }
 
