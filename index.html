@@ -52,11 +52,13 @@
 
     <!-- ===== CURTAIN REVEAL ===== -->
     <div id="curtain-overlay">
-        <div class="curtain-valance"></div>
+        <div class="curtain-valance">
+            <img src="assets/images/ganesha.png" alt="">
+        </div>
         <div class="curtain curtain-left"></div>
         <div class="curtain curtain-right"></div>
         <div class="curtain-center-content" id="curtain-content">
-            <span class="mandala">✾</span>
+            <!-- <span class="mandala">✾</span> -->
             <h1>Sukumar <span style="padding: 0 10px;">weds</span> Megha</h1>
             <p>A Beautiful Beginning · November 2026</p>
             <button class="open-curtain-btn" onclick="openCurtains()">
@@ -121,10 +123,36 @@
             S. Sukumar
             <span class="hero-names-sep floating" style="animation-delay:-1s;">❤</span> D. Megha
         </div>
-        <p class="hero-weds animate-item fade-up delay-2">— WEDS —</p>
+
+        <div id="countdown-section">
+            <span class="section-tag animate-item fade-up"
+                style="display: flex; justify-content: center; align-items: center; gap: 5px;">
+                <img src="assets/images/hourglass.png" alt="Wedding Invitation">
+                Counting Down</span>
+            <h2 class="section-title animate-item fade-up delay-1">The Big Day Is Near…</h2>
+            <div class="countdown-grid">
+                <div class="countdown-box animate-item fade-up delay-2">
+                    <span class="countdown-number" id="cnt-days">00</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-box animate-item fade-up delay-3">
+                    <span class="countdown-number" id="cnt-hours">00</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-box animate-item fade-up delay-4">
+                    <span class="countdown-number" id="cnt-mins">00</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-box animate-item fade-up delay-5">
+                    <span class="countdown-number" id="cnt-secs">00</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>
+        </div>
+        <!-- <p class="hero-weds animate-item fade-up delay-2">— WEDS —</p>
         <p class="hero-blessing animate-item fade-up delay-2">
             "With the blessings of our parents, we invite you to celebrate love, laughter &amp; togetherness."
-        </p>
+        </p> -->
         <div class="divider animate-item fade-in delay-3">
             <div class="divider-flower floating" style="animation-delay:-2s;">❀</div>
         </div>
@@ -259,7 +287,7 @@
 
     <!-- ===== COUNTDOWN ===== -->
     <section id="countdown-section">
-        <div>
+        <!-- <div>
             <span class="section-tag animate-item fade-up"
                 style="display: flex; justify-content: center; align-items: center; gap: 5px;">
                 <img src="assets/images/hourglass.png" alt="Wedding Invitation">
@@ -283,12 +311,12 @@
                     <span class="countdown-label">Seconds</span>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div>
             <div class="section-inner" style="margin-top: 60px;">
-                <hr>
-                <div style="text-align:center; margin-bottom:3rem;margin-top: 60px;">
+                <!-- <hr> -->
+                <div style="text-align:center; margin-bottom:3rem;">
                     <span class="section-tag animate-item fade-up"
                         style="display: flex; justify-content: center; align-items: center; gap: 5px;">
                         <img src="assets/images/calendar.png" alt="Wedding Invitation">
@@ -722,7 +750,7 @@
             }
 
             // Hint text
-            ctx.fillStyle = 'rgba(60,20,5,0.5)';
+            ctx.fillStyle = '#4a0f1a';
             ctx.font = 'bold 13px Cinzel, serif';
             ctx.textAlign = 'center';
             ctx.fillText('✦ SCRATCH HERE ✦', W / 2, H / 2 - 8);
