@@ -1163,10 +1163,11 @@ footer .footer-names {
 
 .rain-petal {
     position: absolute;
-    width: 10px;
-    height: 10px;
-    background: var(--rose-light);
-    border-radius: 50% 0 50% 0;
+    /* width: 10px;
+    height: 10px; */
+    color: var(--rose-light);
+    /* background: var(--rose-light); */
+    /* border-radius: 50% 0 50% 0; */
     opacity: 0.6;
     animation: fall linear infinite;
 }
