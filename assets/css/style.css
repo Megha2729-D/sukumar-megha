@@ -277,8 +277,9 @@ body {
 
 .hero-names {
     font-family: 'Great Vibes', cursive;
-    font-size: clamp(3rem, 8vw, 6rem);
+    font-size: clamp(4rem, 8vw, 6rem);
     color: var(--maroon);
+    font-weight: bold;
     line-height: 1.1;
     margin-bottom: 0.5rem;
     text-shadow: 2px 2px 20px rgba(123, 31, 46, 0.15);
@@ -939,6 +940,8 @@ section {
 
 #countdown-section .section-title {
     color: var(--maroon-dark);
+    font-size: 30px;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 #countdown-section .section-tag {
@@ -980,6 +983,10 @@ section {
     text-transform: uppercase;
     margin-top: 8px;
     display: block;
+}
+
+#event-section {
+    background: var(--maroon-dark)
 }
 
 /* ===== THANK YOU ===== */
