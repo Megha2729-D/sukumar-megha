@@ -218,7 +218,13 @@ body {
     height: 100%;
     /* background-image: radial-gradient(ellipse at 20% 20%, rgba(123, 31, 46, 0.05) 0%, transparent 50%), radial-gradient(ellipse at 80% 80%, rgba(201, 160, 74, 0.05) 0%, transparent 50%); */
 }
-
+@media screen and (max-width: 991px) {
+    #hero::before {
+    opacity: 1;
+    background-image: url(../images/wedding-bg-sm.webp);
+    background-size: cover;
+}
+}
 /* Mandala background */
 
 .mandala-bg {
