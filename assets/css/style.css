@@ -218,13 +218,15 @@ body {
     height: 100%;
     /* background-image: radial-gradient(ellipse at 20% 20%, rgba(123, 31, 46, 0.05) 0%, transparent 50%), radial-gradient(ellipse at 80% 80%, rgba(201, 160, 74, 0.05) 0%, transparent 50%); */
 }
+
 @media screen and (max-width: 991px) {
     #hero::before {
-    opacity: 1;
-    background-image: url(../images/wedding-bg-sm.webp);
-    background-size: cover;
+        opacity: 1;
+        background-image: url(../images/wedding-bg-sm.webp);
+        background-size: cover;
+    }
 }
-}
+
 /* Mandala background */
 
 .mandala-bg {
@@ -331,6 +333,11 @@ section {
 .section-inner {
     max-width: 800px;
     margin: 0 auto;
+    /* background: #7b1f2e0a;
+    backdrop-filter: blur(4px);
+    padding: 20px 10px;
+    border-radius: 25px;
+    color: #ffffff !important; */
 }
 
 .section-tag {
@@ -697,8 +704,8 @@ section {
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    background: rgba(201, 160, 74, 0.08);
-    border: 1px solid rgba(201, 160, 74, 0.2);
+    background: #c9a04a14;
+    border: 1px solid #c9a04a33;
     border-radius: 14px;
     padding: 1.2rem 1.8rem;
     transition: all 0.3s;
@@ -714,8 +721,15 @@ section {
     flex-shrink: 0;
 }
 
+.event-emoji img {
+    width: 100px;
+}
+
 .event-info {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .event-name {
@@ -728,7 +742,7 @@ section {
 .event-time {
     font-family: 'Raleway', sans-serif;
     font-size: 0.82rem;
-    color: rgba(245, 232, 192, 0.6);
+    color: #f5e8c099;
     margin-top: 3px;
 }
 
@@ -833,6 +847,7 @@ section {
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     color: var(--gold);
+    font-weight: bold;
     margin-bottom: 1.5rem;
 }
 

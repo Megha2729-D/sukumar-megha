@@ -138,9 +138,9 @@
                 <img src="assets/images/heart.png" alt="Wedding Invitation">
                 With Love &amp; Joy</span>
             <h2 class="section-title animate-item fade-up delay-1">You're Invited</h2>
-            <div class="divider animate-item fade-in delay-2" style="max-width:300px;">
+            <!-- <div class="divider animate-item fade-in delay-2" style="max-width:300px;">
                 <div class="divider-flower" style="color:var(--gold);">✦</div>
-            </div>
+            </div> -->
             <p class="section-body animate-item fade-up delay-3">
                 Every love story is beautiful… but ours is our favorite ❤<br><br> With immense joy in our hearts, we
                 invite you to be a part of the most special chapter of our lives. Your presence will make our
@@ -178,7 +178,7 @@
     <section id="scratch-section">
         <div class="section-inner" style="text-align:center;">
             <span class="section-tag animate-item fade-up"
-                style="display: flex; justify-content: center; align-items: center;">
+                style="display: flex; justify-content: center; align-items: center; gap: 5px;">
                 <img src="assets/images/love.png" alt="Wedding Invitation">
                 Special Reveal</span>
             <h2 class="section-title animate-item fade-up delay-1">Something Special Awaits You…</h2>
@@ -199,7 +199,8 @@
                         </div>
                         <canvas class="scratch-canvas" id="canvas1" width="200" height="140"></canvas>
                     </div>
-                    <p class="scratch-hint" style="display: flex; justify-content: center; align-items: center;">Scratch
+                    <p class="scratch-hint"
+                        style="font-weight: bold; display: flex; justify-content: center; align-items: center;">Scratch
                         here
                         <img src="assets/images/heart-single.png" alt="Wedding Invitation">
                     </p>
@@ -214,7 +215,8 @@
                         </div>
                         <canvas class="scratch-canvas" id="canvas2" width="200" height="140"></canvas>
                     </div>
-                    <p class="scratch-hint" style="display: flex; justify-content: center; align-items: center;">Scratch
+                    <p class="scratch-hint"
+                        style="font-weight: bold; display: flex; justify-content: center; align-items: center;">Scratch
                         here
                         <img src="assets/images/heart-single.png" alt="Wedding Invitation">
                     </p>
@@ -257,89 +259,105 @@
 
     <!-- ===== COUNTDOWN ===== -->
     <section id="countdown-section">
-        <span class="section-tag animate-item fade-up">⏳ Counting Down</span>
-        <h2 class="section-title animate-item fade-up delay-1">The Big Day Is Near…</h2>
-        <div class="countdown-grid">
-            <div class="countdown-box animate-item fade-up delay-2">
-                <span class="countdown-number" id="cnt-days">00</span>
-                <span class="countdown-label">Days</span>
-            </div>
-            <div class="countdown-box animate-item fade-up delay-3">
-                <span class="countdown-number" id="cnt-hours">00</span>
-                <span class="countdown-label">Hours</span>
-            </div>
-            <div class="countdown-box animate-item fade-up delay-4">
-                <span class="countdown-number" id="cnt-mins">00</span>
-                <span class="countdown-label">Minutes</span>
-            </div>
-            <div class="countdown-box animate-item fade-up delay-5">
-                <span class="countdown-number" id="cnt-secs">00</span>
-                <span class="countdown-label">Seconds</span>
+        <div>
+            <span class="section-tag animate-item fade-up"
+                style="display: flex; justify-content: center; align-items: center; gap: 5px;">
+                <img src="assets/images/hourglass.png" alt="Wedding Invitation">
+                Counting Down</span>
+            <h2 class="section-title animate-item fade-up delay-1">The Big Day Is Near…</h2>
+            <div class="countdown-grid">
+                <div class="countdown-box animate-item fade-up delay-2">
+                    <span class="countdown-number" id="cnt-days">00</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-box animate-item fade-up delay-3">
+                    <span class="countdown-number" id="cnt-hours">00</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-box animate-item fade-up delay-4">
+                    <span class="countdown-number" id="cnt-mins">00</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-box animate-item fade-up delay-5">
+                    <span class="countdown-number" id="cnt-secs">00</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
             </div>
         </div>
 
-        <div class="section-inner">
-
-            <div style="text-align:center; margin-bottom:3rem;">
-                <span class="section-tag animate-item fade-up">📅 Schedule</span>
-                <h2 class="section-title animate-item fade-up delay-1">
-                    Wedding Events
-                </h2>
-            </div>
-
-            <!-- 14th November -->
-            <div class="event-day">
-                <div class="event-day-header animate-item slide-left delay-1">
-                    <span class="event-day-badge">14th November 2026</span>
-                    <div class="event-day-line"></div>
-                    <span class="event-day-title">Groom’s Welcome</span>
+        <div>
+            <div class="section-inner" style="margin-top: 60px;">
+                <hr>
+                <div style="text-align:center; margin-bottom:3rem;margin-top: 60px;">
+                    <span class="section-tag animate-item fade-up"
+                        style="display: flex; justify-content: center; align-items: center; gap: 5px;">
+                        <img src="assets/images/calendar.png" alt="Wedding Invitation">
+                        Schedule</span>
+                    <h2 class="section-title animate-item fade-up delay-1">
+                        Wedding Events
+                    </h2>
                 </div>
 
-                <div class="events-list">
-                    <div class="event-item animate-item fade-up delay-2 hover-lift">
-                        <span class="event-emoji">🌸</span>
-                        <div class="event-info">
-                            <div class="event-name">Parisam & Groom’s Welcome</div>
-                            <div class="event-time">5:00 PM onwards</div>
+                <!-- 14th November -->
+                <div class="event-day">
+                    <div class="event-day-header animate-item slide-left delay-1">
+                        <span class="event-day-badge">14th November 2026</span>
+                        <div class="event-day-line"></div>
+                        <span class="event-day-title">Groom’s Welcome</span>
+                    </div>
+
+                    <div class="events-list">
+                        <div class="event-item animate-item fade-up delay-2 hover-lift">
+                            <span class="event-emoji">
+                                <img src="assets/images/parisam.png" alt="">
+                            </span>
+                            <div class="event-info">
+                                <div class="event-name">Parisam & Groom’s Welcome</div>
+                                <div class="event-time">5:00 PM onwards</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
 
-            <!-- 15th November -->
-            <div class="event-day">
-                <div class="event-day-header animate-item slide-left delay-2">
-                    <span class="event-day-badge">15th November 2026</span>
-                    <div class="event-day-line"></div>
-                    <span class="event-day-title">Wedding Day</span>
-                </div>
-
-                <div class="events-list">
-
-                    <div class="event-item animate-item fade-up delay-3 hover-lift">
-                        <span class="event-emoji">💍</span>
-                        <div class="event-info">
-                            <div class="event-name">Wedding Ceremony</div>
-                            <div class="event-time">4:32 AM — 6:01 AM</div>
-                        </div>
+                <!-- 15th November -->
+                <div class="event-day">
+                    <div class="event-day-header animate-item slide-left delay-2">
+                        <span class="event-day-badge">15th November 2026</span>
+                        <div class="event-day-line"></div>
+                        <span class="event-day-title">Wedding Day</span>
                     </div>
 
-                    <div class="event-item animate-item fade-up delay-4 hover-lift">
-                        <span class="event-emoji">🌸</span>
-                        <div class="event-info">
-                            <div class="event-name">Wedding Reception</div>
-                            <div class="event-time">9:00 AM onwards</div>
+                    <div class="events-list">
+
+                        <div class="event-item animate-item fade-up delay-3 hover-lift">
+                            <span class="event-emoji">
+                                <img src="assets/images/temple.png" alt="">
+                            </span>
+                            <div class="event-info">
+                                <div class="event-name">Wedding Ceremony</div>
+                                <div class="event-time">4:32 AM — 6:01 AM</div>
+                            </div>
                         </div>
+
+                        <div class="event-item animate-item fade-up delay-4 hover-lift">
+                            <span class="event-emoji">
+                                <img src="assets/images/reception.png" alt="">
+                            </span>
+                            <div class="event-info">
+                                <div class="event-name">Wedding Reception</div>
+                                <div class="event-time">9:00 AM onwards</div>
+                            </div>
+                        </div>
+
                     </div>
 
+                    <p class="event-quote animate-item fade-in delay-4">
+                        "Two hearts, one beautiful journey, and a lifetime of togetherness."
+                    </p>
                 </div>
 
-                <p class="event-quote animate-item fade-in delay-4">
-                    "Two hearts, one beautiful journey, and a lifetime of togetherness."
-                </p>
             </div>
-
         </div>
     </section>
 
@@ -437,7 +455,10 @@
     <!-- ===== VENUE ===== -->
     <section id="venue">
         <div class="section-inner">
-            <span class="section-tag animate-item fade-up">📍 Venue</span>
+            <span class="section-tag animate-item fade-up"
+                style="display: flex; justify-content: center; align-items: center; gap: 5px;">
+                <img src="assets/images/wedding-location.png" alt="Wedding Invitation">
+                Venue</span>
             <h2 class="section-title animate-item fade-up delay-1">Find Us Here</h2>
             <div class="venue-card animate-item fade-up delay-2 hover-lift">
                 <div class="venue-name">A.K Mahal</div>
