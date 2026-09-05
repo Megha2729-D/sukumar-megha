@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="hosting-provider" content="Netlify">
+    <meta name="netlify-deploy"
+        content="https://netlify.new/?utm_campaign=ai-legible&amp;utm_source=meta&amp;utm_medium=referral&amp;utm_id=c7031482-33d6-4896-b64f-7d5b5162a2d8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sukumar ❤️ Megha — Wedding Invitation</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Great+Vibes&family=Cinzel:wght@400;600;700&family=Raleway:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- CONFETTI & PETAL CANVAS -->
+    <canvas id="confetti-canvas"></canvas>
+    <div id="petal-rain"></div>
+
+    <!-- ===== CURTAIN REVEAL ===== -->
+    <div id="curtain-overlay">
+        <div class="curtain-valance"></div>
+        <div class="curtain curtain-left"></div>
+        <div class="curtain curtain-right"></div>
+        <div class="curtain-center-content" id="curtain-content">
+            <span class="mandala">✾</span>
+            <h1>Sukumar weds Megha</h1>
+            <p>A Beautiful Beginning · November 2026</p>
+            <button class="open-curtain-btn" onclick="openCurtains()">
+                ✦ Open Invitation ✦
+            </button>
+        </div>
+    </div>
+
+
+
+    <!-- ===== HERO ===== -->
+    <section id="hero">
+        <div class="mandala-bg parallax" data-speed="-0.2" style="top:-100px;left:-150px;">
+            <!-- ... same svg ... -->
+            <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" fill="#7B1F2E">
+                <circle cx="300" cy="300" r="280" fill="none" stroke="#7B1F2E" stroke-width="1" />
+                <circle cx="300" cy="300" r="220" fill="none" stroke="#7B1F2E" stroke-width="0.7" />
+                <circle cx="300" cy="300" r="160" fill="none" stroke="#7B1F2E" stroke-width="0.5" />
+                <g transform="translate(300,300)">
+                    <g id="petal">
+                        <ellipse cx="0" cy="-270" rx="18" ry="40" />
+                    </g>
+                    <use href="#petal" transform="rotate(30)" />
+                    <use href="#petal" transform="rotate(60)" />
+                    <use href="#petal" transform="rotate(90)" />
+                    <use href="#petal" transform="rotate(120)" />
+                    <use href="#petal" transform="rotate(150)" />
+                    <use href="#petal" transform="rotate(180)" />
+                    <use href="#petal" transform="rotate(210)" />
+                    <use href="#petal" transform="rotate(240)" />
+                    <use href="#petal" transform="rotate(270)" />
+                    <use href="#petal" transform="rotate(300)" />
+                    <use href="#petal" transform="rotate(330)" />
+                </g>
+            </svg>
+        </div>
+        <div class="mandala-bg parallax" data-speed="0.1" style="bottom:-100px;right:-150px; transform:rotate(45deg);">
+            <!-- ... same svg ... -->
+            <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" fill="#C9A04A">
+                <circle cx="300" cy="300" r="280" fill="none" stroke="#C9A04A" stroke-width="1" />
+                <circle cx="300" cy="300" r="180" fill="none" stroke="#C9A04A" stroke-width="0.5" />
+                <g transform="translate(300,300)">
+                    <g id="petal2">
+                        <ellipse cx="0" cy="-240" rx="14" ry="35" />
+                    </g>
+                    <use href="#petal2" transform="rotate(45)" />
+                    <use href="#petal2" transform="rotate(90)" />
+                    <use href="#petal2" transform="rotate(135)" />
+                    <use href="#petal2" transform="rotate(180)" />
+                    <use href="#petal2" transform="rotate(225)" />
+                    <use href="#petal2" transform="rotate(270)" />
+                    <use href="#petal2" transform="rotate(315)" />
+                </g>
+            </svg>
+        </div>
+
+        <span class="hero-subtitle-top animate-item fade-up">✦ A Sacred Union ✦</span>
+        <div class="divider animate-item fade-in delay-1">
+            <div class="divider-flower floating">✿</div>
+        </div>
+        <div class="hero-names animate-item fade-up delay-1">
+            S. Sukumar
+            <span class="hero-names-sep floating" style="animation-delay:-1s;">❤</span> D. Megha
+        </div>
+        <p class="hero-weds animate-item fade-up delay-2">— WEDS —</p>
+        <p class="hero-blessing animate-item fade-up delay-2">
+            "With the blessings of our parents, we invite you to celebrate love, laughter &amp; togetherness."
+        </p>
+        <div class="divider animate-item fade-in delay-3">
+            <div class="divider-flower floating" style="animation-delay:-2s;">❀</div>
+        </div>
+        <p style="font-family:'Cinzel',serif; font-size:0.8rem; color:var(--gold); letter-spacing:0.2em;"
+            class="animate-item fade-up delay-3">
+            14 · 15 NOVEMBER 2026 &nbsp;|&nbsp; A.K MAHAL, TRICHY
+        </p>
+    </section>
+
+    <!-- ===== INVITE ===== -->
+    <section id="invite">
+        <div class="section-inner" style="position:relative; z-index:1;">
+            <span class="section-tag animate-item slide-left"
+                style="display: flex; justify-content: center; align-items: center;">
+                <img src="assets/images/heart.png" alt="Wedding Invitation">
+                With Love &amp; Joy</span>
+            <h2 class="section-title animate-item fade-up delay-1">You're Invited</h2>
+            <div class="divider animate-item fade-in delay-2" style="max-width:300px;">
+                <div class="divider-flower" style="color:var(--gold);">✦</div>
+            </div>
+            <p class="section-body animate-item fade-up delay-3">
+                Every love story is beautiful… but ours is our favorite ❤<br><br> With immense joy in our hearts, we
+                invite you to be a part of the most special chapter of our lives. Your presence will make our
+                celebration complete.
+            </p>
+            <div class="divider animate-item fade-in delay-4" style="margin-top:2rem;max-width:300px;">
+                <div class="divider-flower" style="color:var(--gold);">✿</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SCRATCH CARD ===== -->
+    <section id="scratch-section">
+        <div class="section-inner" style="text-align:center;">
+            <span class="section-tag animate-item fade-up"
+                style="display: flex; justify-content: center; align-items: center;">
+                <img src="assets/images/love.png" alt="Wedding Invitation">
+                Special Reveal</span>
+            <h2 class="section-title animate-item fade-up delay-1">Something Special Awaits You…</h2>
+            <p class="section-body animate-item fade-up delay-2"
+                style="margin-bottom:0.5rem; display: flex; align-items: center; justify-content: center;">
+                Scratch to reveal the big dates
+                <img src="assets/images/point-down.png" alt="Wedding Invitation">
+            </p>
+
+            <div class="scratch-container animate-item scale-up delay-3">
+                <!-- Card 1 -->
+                <div>
+                    <div class="scratch-card-wrap hover-lift" id="card1-wrap">
+                        <div class="scratch-reveal" id="reveal1">
+                            <span class="date-label">FIRST DAY</span>
+                            <span class="date-main">14th November</span>
+                            <span class="date-year">2026</span>
+                        </div>
+                        <canvas class="scratch-canvas" id="canvas1" width="200" height="140"></canvas>
+                    </div>
+                    <p class="scratch-hint" style="display: flex; justify-content: center; align-items: center;">Scratch
+                        here
+                        <img src="assets/images/heart-single.png" alt="Wedding Invitation">
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div>
+                    <div class="scratch-card-wrap" id="card2-wrap">
+                        <div class="scratch-reveal" id="reveal2">
+                            <span class="date-label">SECOND DAY</span>
+                            <span class="date-main">15th November</span>
+                            <span class="date-year">2026</span>
+                        </div>
+                        <canvas class="scratch-canvas" id="canvas2" width="200" height="140"></canvas>
+                    </div>
+                    <p class="scratch-hint" style="display: flex; justify-content: center; align-items: center;">Scratch
+                        here
+                        <img src="assets/images/heart-single.png" alt="Wedding Invitation">
+                    </p>
+                </div>
+            </div>
+
+            <div class="scratch-success" id="scratch-success">
+                <h3>🎉 Mark Your Calendar!</h3>
+                <p>14th &amp; 15th November 2026 — moments filled with love &amp; celebration 💫</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== COUPLE ===== -->
+    <section id="couple">
+        <div class="section-inner">
+            <div style="text-align:center;">
+                <span class="section-tag animate-item fade-up">💑 The Couple</span>
+                <h2 class="section-title animate-item fade-up delay-1">Two Souls, One Destiny</h2>
+            </div>
+            <div class="couple-grid">
+                <div class="couple-card animate-item slide-left delay-2 hover-lift">
+                    <div class="couple-icon floating">🤵</div>
+                    <div class="couple-name">Sukumar</div>
+                    <p class="couple-desc">
+                        "A soul full of love, courage & dreams… ready to begin a beautiful journey of togetherness."
+                    </p>
+                </div>
+                <div class="couple-hearts animate-item fade-in delay-3">❤</div>
+                <div class="couple-card animate-item slide-right delay-2 hover-lift">
+                    <div class="couple-icon floating" style="animation-delay:-1.5s;">👰</div>
+                    <div class="couple-name">Megha</div>
+                    <p class="couple-desc">
+                        "A heart filled with love, grace & dreams… ready to step into a beautiful journey of forever."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== COUNTDOWN ===== -->
+    <section id="countdown-section">
+        <span class="section-tag animate-item fade-up">⏳ Counting Down</span>
+        <h2 class="section-title animate-item fade-up delay-1">The Big Day Is Near…</h2>
+        <div class="countdown-grid">
+            <div class="countdown-box animate-item fade-up delay-2">
+                <span class="countdown-number" id="cnt-days">00</span>
+                <span class="countdown-label">Days</span>
+            </div>
+            <div class="countdown-box animate-item fade-up delay-3">
+                <span class="countdown-number" id="cnt-hours">00</span>
+                <span class="countdown-label">Hours</span>
+            </div>
+            <div class="countdown-box animate-item fade-up delay-4">
+                <span class="countdown-number" id="cnt-mins">00</span>
+                <span class="countdown-label">Minutes</span>
+            </div>
+            <div class="countdown-box animate-item fade-up delay-5">
+                <span class="countdown-number" id="cnt-secs">00</span>
+                <span class="countdown-label">Seconds</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EVENTS ===== -->
+    <section id="events">
+        <div class="section-inner">
+
+            <div style="text-align:center; margin-bottom:3rem;">
+                <span class="section-tag animate-item fade-up">📅 Schedule</span>
+                <h2 class="section-title animate-item fade-up delay-1">
+                    Wedding Events
+                </h2>
+            </div>
+
+            <!-- 14th November -->
+            <div class="event-day">
+                <div class="event-day-header animate-item slide-left delay-1">
+                    <span class="event-day-badge">14th November 2026</span>
+                    <div class="event-day-line"></div>
+                    <span class="event-day-title">Wedding Reception</span>
+                </div>
+
+                <div class="events-list">
+                    <div class="event-item animate-item fade-up delay-2 hover-lift">
+                        <span class="event-emoji">🌸</span>
+                        <div class="event-info">
+                            <div class="event-name">Parisam & Groom’s Welcome</div>
+                            <div class="event-time">5:00 PM onwards</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 15th November -->
+            <div class="event-day">
+                <div class="event-day-header animate-item slide-left delay-2">
+                    <span class="event-day-badge">15th November 2026</span>
+                    <div class="event-day-line"></div>
+                    <span class="event-day-title">Wedding Day</span>
+                </div>
+
+                <div class="events-list">
+
+                    <div class="event-item animate-item fade-up delay-3 hover-lift">
+                        <span class="event-emoji">💍</span>
+                        <div class="event-info">
+                            <div class="event-name">Wedding Ceremony</div>
+                            <div class="event-time">4:32 AM — 6:01 AM</div>
+                        </div>
+                    </div>
+
+                    <div class="event-item animate-item fade-up delay-4 hover-lift">
+                        <span class="event-emoji">🌸</span>
+                        <div class="event-info">
+                            <div class="event-name">Wedding Reception</div>
+                            <div class="event-time">9:00 AM onwards</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <p class="event-quote animate-item fade-in delay-4">
+                    "Two hearts, one beautiful journey, and a lifetime of togetherness."
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== INVITES ===== -->
+    <section id="invites">
+        <div class="section-inner">
+            <div style="text-align:center;">
+                <span class="section-tag animate-item fade-up">💖 Personal Invites</span>
+                <h2 class="section-title animate-item fade-up delay-1">Join Our Celebration</h2>
+            </div>
+            <div class="invite-cards">
+                <div class="invite-card animate-item slide-left delay-2 hover-lift">
+                    <span class="invite-card-icon">👨‍👩‍👧‍👦</span>
+                    <h3>FOR FAMILY</h3>
+                    <p>You have been our roots, our strength, our everything… Now, we invite you to witness the moment
+                        we begin our forever.</p>
+                </div>
+                <div class="invite-card animate-item slide-right delay-2 hover-lift">
+                    <span class="invite-card-icon">🤍</span>
+                    <h3>FOR FRIENDS</h3>
+                    <p>You were part of our story… now be part of our biggest celebration! From laughter to memories —
+                        let's create one more unforgettable moment together 💫</p>
+                </div>
+            </div>
+            <div class="invite-slogan animate-item fade-in delay-3">
+                <p>"Not just a wedding…<br>It's a celebration of love, family &amp; forever."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== VENUE ===== -->
+    <section id="venue">
+        <div class="section-inner">
+            <span class="section-tag animate-item fade-up">📍 Venue</span>
+            <h2 class="section-title animate-item fade-up delay-1">Find Us Here</h2>
+            <div class="venue-card animate-item fade-up delay-2 hover-lift">
+                <div class="venue-name">A.K Mahal</div>
+                <div class="venue-place">Thiruvanaikoil, Trichy, Tamil Nadu</div>
+                <p class="venue-desc">
+                    "Join us at this beautiful venue where hearts unite and memories are made."
+                </p>
+                <div class="map-placeholder" onclick="window.open('https://maps.app.goo.gl/mqUhWKNdouZmStRj7','_blank')"
+                    title="Open in Google Maps">
+                    <!-- ... same content ... -->
+                    <div style="text-align:center; position:relative; z-index:1;">
+                        <svg width="56" height="72" viewBox="0 0 56 72" xmlns="http://www.w3.org/2000/svg"
+                            style="filter:drop-shadow(0 6px 14px rgba(123,31,46,0.45))">
+                            <defs>
+                                <radialGradient id="pinGrad" cx="38%" cy="30%" r="65%">
+                                    <stop offset="0%" stop-color="#E8A0B0" />
+                                    <stop offset="50%" stop-color="#7B1F2E" />
+                                    <stop offset="100%" stop-color="#4A0F1A" />
+                                </radialGradient>
+                                <radialGradient id="shinGrad" cx="30%" cy="25%" r="50%">
+                                    <stop offset="0%" stop-color="rgba(255,255,255,0.55)" />
+                                    <stop offset="100%" stop-color="rgba(255,255,255,0)" />
+                                </radialGradient>
+                            </defs>
+                            <path d="M28 2 C14 2 4 12 4 25 C4 42 28 70 28 70 C28 70 52 42 52 25 C52 12 42 2 28 2 Z"
+                                fill="url(#pinGrad)" stroke="#C9A04A" stroke-width="1.5" />
+                            <path d="M28 2 C14 2 4 12 4 25 C4 42 28 70 28 70 C28 70 52 42 52 25 C52 12 42 2 28 2 Z"
+                                fill="url(#shinGrad)" />
+                            <circle cx="28" cy="25" r="14" fill="rgba(201,160,74,0.15)" stroke="#C9A04A"
+                                stroke-width="1.2" />
+                            <g transform="translate(28,25)" fill="#E8C97A" opacity="0.95">
+                                <ellipse cx="0" cy="-8" rx="2.5" ry="5" />
+                                <ellipse cx="0" cy="8" rx="2.5" ry="5" />
+                                <ellipse cx="-8" cy="0" rx="5" ry="2.5" />
+                                <ellipse cx="8" cy="0" rx="5" ry="2.5" />
+                                <ellipse cx="-5.6" cy="-5.6" rx="2" ry="4.5" transform="rotate(-45,-5.6,-5.6)" />
+                                <ellipse cx="5.6" cy="-5.6" rx="2" ry="4.5" transform="rotate(45,5.6,-5.6)" />
+                                <ellipse cx="-5.6" cy="5.6" rx="2" ry="4.5" transform="rotate(45,-5.6,5.6)" />
+                                <ellipse cx="5.6" cy="5.6" rx="2" ry="4.5" transform="rotate(-45,5.6,5.6)" />
+                                <circle cx="0" cy="0" r="3.5" fill="#C9A04A" />
+                                <circle cx="0" cy="0" r="1.8" fill="#fff8ee" />
+                            </g>
+                        </svg>
+                        <div class="map-label animate-item fade-in delay-3" style="margin-top:10px;">TAP TO VIEW ON MAP
+                        </div>
+                    </div>
+                </div>
+                <a href="https://maps.app.goo.gl/mqUhWKNdouZmStRj7" target="_blank"
+                    class="navigate-btn animate-item scale-up delay-4">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0">
+                        <polygon points="3 11 22 2 13 21 11 13 3 11" />
+                    </svg>
+                    Navigate to Venue
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== THANK YOU ===== -->
+    <section id="thankyou">
+        <div class="section-inner">
+            <span class="section-tag animate-item fade-up"
+                style="display: flex; align-items: center; justify-content: center;text-align:center;">
+                <img src="assets/images/gratitude.png" alt="Wedding Invitation">
+                With Gratitude
+            </span>
+            <h2 class="section-title animate-item fade-up delay-1" style="text-align:center;">Thank You</h2>
+            <div class="thankyou-card animate-item scale-up delay-2 hover-lift">
+                <p class="thankyou-text">
+                    "From the bottom of our hearts…<br> Thank you for being a part of our journey. Your love, blessings,
+                    and presence mean everything to us.<br><br> We can't wait to celebrate this beautiful beginning with
+                    you."
+                </p>
+                <span class="thankyou-heart floating">✦</span>
+                <div class="thankyou-names">Sukumar &amp; Megha</div>
+                <span class="thankyou-heart floating" style="animation-delay:-2s;">✦</span>
+            </div>
+            <div style="text-align:center;">
+                <a href="https://wa.me/?text=You%27re%20invited%20to%20the%20wedding%20of%20Sukumar%20%26%20Megha%20%E2%9D%A4%EF%B8%8F%20on%2014th%20%26%2015th%20November%202026%20at%20A.K%20Mahal%2C%20Thiruvanaikoil%2C%20Trichy.%20Save%20the%20date%21%20%F0%9F%8C%B8"
+                    class="whatsapp-share animate-item fade-up delay-3" target="_blank">
+                    <img src="assets/images/share.png" alt="Wedding Invitation"> Share this Invitation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <span class="footer-names">Sukumar ❤ Megha</span> 14th &amp; 15th November 2026 &nbsp;·&nbsp; A.K Mahal, Trichy
+        <br><span style="opacity:0.5; margin-top:8px; display:block; font-size:0.7rem;">With love &amp; joy ✿</span>
+    </footer>
+
+    <script>
+        // ===== RESET SCROLL POSITION ON REFRESH =====
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+
+        window.addEventListener('load', () => {
+            window.scrollTo(0, 0);
+        });
+        // ===== CURTAIN =====
+        function openCurtains() {
+            const overlay = document.getElementById('curtain-overlay');
+            const content = document.getElementById('curtain-content');
+
+            // Keep page locked while curtain is opening
+            document.documentElement.classList.remove('page-open');
+            document.body.classList.remove('page-open');
+
+            content.classList.add('fade-out');
+
+            setTimeout(() => {
+                // Open curtains
+                document.querySelectorAll('.curtain').forEach(c => {
+                    c.classList.add('open');
+                });
+
+                setTimeout(() => {
+                    // Fade out overlay
+                    overlay.style.transition = 'opacity 0.8s ease';
+                    overlay.style.opacity = '0';
+
+                    setTimeout(() => {
+                        overlay.style.display = 'none';
+
+                        // Enable scrolling ONLY after curtain is fully opened
+                        document.documentElement.classList.add('page-open');
+                        document.body.classList.add('page-open');
+
+                        // Initialize page animations
+                        triggerFadeUps();
+                        initParallax();
+                        initPetalRain();
+
+                    }, 800);
+
+                }, 1200);
+
+            }, 300);
+        }
+
+        // ===== ANIMATION SYSTEM =====
+        function triggerFadeUps() {
+            const obs = new IntersectionObserver((entries) => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        e.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.15
+            });
+            document.querySelectorAll('.animate-item').forEach(el => obs.observe(el));
+        }
+
+        // ===== PARALLAX =====
+        function initParallax() {
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                document.querySelectorAll('.parallax').forEach(el => {
+                    const speed = el.getAttribute('data-speed') || 0.1;
+                    const yPos = -(scrolled * speed);
+                    el.style.transform = `translateY(${yPos}px)`;
+                });
+            });
+        }
+
+        // ===== PETAL RAIN =====
+        function initPetalRain() {
+            const container = document.getElementById('petal-rain');
+            const petalCount = 20;
+            for (let i = 0; i < petalCount; i++) {
+                createPetal(container);
+            }
+        }
+
+        function createPetal(container) {
+            const petal = document.createElement('div');
+            petal.className = 'rain-petal';
+            petal.style.left = Math.random() * 100 + 'vw';
+            petal.style.animationDuration = Math.random() * 5 + 5 + 's';
+            petal.style.animationDelay = Math.random() * 5 + 's';
+            petal.style.opacity = Math.random() * 0.5 + 0.2;
+            container.appendChild(petal);
+
+            petal.addEventListener('animationiteration', () => {
+                petal.style.left = Math.random() * 100 + 'vw';
+            });
+        }
+
+        // ===== COUNTDOWN =====
+        // ===== COUNTDOWN =====
+        function updateCountdown() {
+            const target = new Date("2026-11-14T17:00:00+05:30");
+            const now = new Date();
+
+            const diff = target - now;
+
+            if (diff <= 0) {
+                document.getElementById('cnt-days').textContent = '00';
+                document.getElementById('cnt-hours').textContent = '00';
+                document.getElementById('cnt-mins').textContent = '00';
+                document.getElementById('cnt-secs').textContent = '00';
+                return;
+            }
+
+            const d = Math.floor(diff / 86400000);
+            const h = Math.floor((diff % 86400000) / 3600000);
+            const m = Math.floor((diff % 3600000) / 60000);
+            const s = Math.floor((diff % 60000) / 1000);
+
+            document.getElementById('cnt-days').textContent =
+                String(d).padStart(2, '0');
+
+            document.getElementById('cnt-hours').textContent =
+                String(h).padStart(2, '0');
+
+            document.getElementById('cnt-mins').textContent =
+                String(m).padStart(2, '0');
+
+            document.getElementById('cnt-secs').textContent =
+                String(s).padStart(2, '0');
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // ===== SCRATCH CARD SYSTEM =====
+        const scratchState = {
+            card1: false,
+            card2: false
+        };
+
+        function initScratchCard(canvasId, cardNum) {
+            const canvas = document.getElementById(canvasId);
+            const ctx = canvas.getContext('2d');
+            const W = canvas.width,
+                H = canvas.height;
+
+            // Draw golden scratch layer
+            const grad = ctx.createLinearGradient(0, 0, W, H);
+            grad.addColorStop(0, '#8B5E0A');
+            grad.addColorStop(0.3, '#C9A04A');
+            grad.addColorStop(0.6, '#E8C97A');
+            grad.addColorStop(1, '#9A6E10');
+            ctx.fillStyle = grad;
+            ctx.fillRect(0, 0, W, H);
+
+            // Texture dots
+            for (let i = 0; i < 120; i++) {
+                ctx.fillStyle = `rgba(${Math.random() > 0.5 ? 255 : 150},${Math.random() * 80 + 100},0,0.15)`;
+                ctx.beginPath();
+                ctx.arc(Math.random() * W, Math.random() * H, Math.random() * 3 + 1, 0, Math.PI * 2);
+                ctx.fill();
+            }
+
+            // Hint text
+            ctx.fillStyle = 'rgba(60,20,5,0.5)';
+            ctx.font = 'bold 13px Cinzel, serif';
+            ctx.textAlign = 'center';
+            ctx.fillText('✦ SCRATCH HERE ✦', W / 2, H / 2 - 8);
+            ctx.font = '11px Raleway, sans-serif';
+            ctx.fillText('Reveal the date', W / 2, H / 2 + 12);
+
+            // Sparkles
+            ['✦', '✦', '✦'].forEach((s, i) => {
+                ctx.fillStyle = 'rgba(60,20,5,0.35)';
+                ctx.font = '18px serif';
+                ctx.fillText(s, 30 + i * 70, 30);
+                ctx.fillText(s, 30 + i * 70, H - 15);
+            });
+
+            ctx.globalCompositeOperation = 'destination-out';
+
+            let isDrawing = false;
+            let totalPixels = W * H;
+            let scratchedPixels = 0;
+            let alreadyDone = false;
+
+            function getPos(e) {
+                const rect = canvas.getBoundingClientRect();
+                const scaleX = W / rect.width,
+                    scaleY = H / rect.height;
+                if (e.touches) return {
+                    x: (e.touches[0].clientX - rect.left) * scaleX,
+                    y: (e.touches[0].clientY - rect.top) * scaleY
+                };
+                return {
+                    x: (e.clientX - rect.left) * scaleX,
+                    y: (e.clientY - rect.top) * scaleY
+                };
+            }
+
+            function drawScratch(pos) {
+                ctx.beginPath();
+                ctx.arc(pos.x, pos.y, 24, 0, Math.PI * 2);
+                ctx.fill();
+            }
+
+            function checkProgress() {
+                if (alreadyDone) return;
+                const imgData = ctx.getImageData(0, 0, W, H);
+                let cleared = 0;
+                for (let i = 3; i < imgData.data.length; i += 4) {
+                    if (imgData.data[i] < 128) cleared++;
+                }
+                const pct = cleared / totalPixels;
+                if (pct > 0.58) {
+                    alreadyDone = true;
+                    // Smooth full clear
+                    smoothClear(ctx, W, H);
+                    scratchState['card' + cardNum] = true;
+                    setTimeout(() => {
+                        if (scratchState.card1 && scratchState.card2) triggerSuccessCelebration();
+                        else if (!scratchState.card1 || !scratchState.card2) triggerMiniCelebration(canvas);
+                    }, 400);
+                }
+            }
+
+            canvas.addEventListener('mousedown', e => {
+                isDrawing = true;
+                drawScratch(getPos(e));
+            });
+            canvas.addEventListener('mousemove', e => {
+                if (!isDrawing) return;
+                drawScratch(getPos(e));
+                checkProgress();
+            });
+            canvas.addEventListener('mouseup', () => {
+                isDrawing = false;
+            });
+            canvas.addEventListener('touchstart', e => {
+                e.preventDefault();
+                isDrawing = true;
+                drawScratch(getPos(e));
+            }, {
+                passive: false
+            });
+            canvas.addEventListener('touchmove', e => {
+                e.preventDefault();
+                if (!isDrawing) return;
+                drawScratch(getPos(e));
+                checkProgress();
+            }, {
+                passive: false
+            });
+            canvas.addEventListener('touchend', () => {
+                isDrawing = false;
+            });
+        }
+
+        function smoothClear(ctx, W, H) {
+            let alpha = 1;
+
+            function step() {
+                ctx.globalAlpha = 0.1;
+                ctx.clearRect(0, 0, W, H);
+                ctx.globalAlpha = 1;
+                alpha -= 0.08;
+                if (alpha > 0) requestAnimationFrame(step);
+                else ctx.clearRect(0, 0, W, H);
+            }
+            step();
+        }
+
+        // ===== CONFETTI SYSTEM =====
+        const confettiCanvas = document.getElementById('confetti-canvas');
+        const confettiCtx = confettiCanvas.getContext('2d');
+        let confettiParticles = [];
+        let confettiRunning = false;
+
+        function resizeConfetti() {
+            confettiCanvas.width = window.innerWidth;
+            confettiCanvas.height = window.innerHeight;
+        }
+        resizeConfetti();
+        window.addEventListener('resize', resizeConfetti);
+
+        const COLORS = ['#C9A04A', '#E8C97A', '#7B1F2E', '#B03050', '#E8A0B0', '#FFD700', '#FF6B8A', '#FFA726', '#AB47BC'];
+        const SHAPES = ['circle', 'rect', 'petal', 'heart'];
+
+        function createParticle(x, y, burst) {
+            const angle = burst ? Math.random() * Math.PI * 2 : -Math.PI / 2 + (Math.random() - 0.5) * 0.8;
+            const speed = burst ? 4 + Math.random() * 10 : 2 + Math.random() * 5;
+            return {
+                x,
+                y,
+                vx: Math.cos(angle) * speed,
+                vy: Math.sin(angle) * speed - (burst ? 0 : 3),
+                gravity: 0.18 + Math.random() * 0.1,
+                color: COLORS[Math.floor(Math.random() * COLORS.length)],
+                size: 6 + Math.random() * 8,
+                shape: SHAPES[Math.floor(Math.random() * SHAPES.length)],
+                rot: Math.random() * 360,
+                rotSpeed: (Math.random() - 0.5) * 8,
+                alpha: 1,
+                life: 1,
+                decay: 0.008 + Math.random() * 0.012
+            };
+        }
+
+        function drawParticle(p) {
+            confettiCtx.save();
+            confettiCtx.globalAlpha = p.alpha;
+            confettiCtx.fillStyle = p.color;
+            confettiCtx.strokeStyle = p.color;
+            confettiCtx.translate(p.x, p.y);
+            confettiCtx.rotate(p.rot * Math.PI / 180);
+
+            if (p.shape === 'circle') {
+                confettiCtx.beginPath();
+                confettiCtx.arc(0, 0, p.size / 2, 0, Math.PI * 2);
+                confettiCtx.fill();
+            } else if (p.shape === 'rect') {
+                confettiCtx.fillRect(-p.size / 2, -p.size / 4, p.size, p.size / 2);
+            } else if (p.shape === 'petal') {
+                confettiCtx.beginPath();
+                confettiCtx.ellipse(0, -p.size / 3, p.size / 3, p.size / 2, 0, 0, Math.PI * 2);
+                confettiCtx.fill();
+            } else if (p.shape === 'heart') {
+                const s = p.size / 10;
+                confettiCtx.beginPath();
+                confettiCtx.moveTo(0, s * 2);
+                confettiCtx.bezierCurveTo(-s * 4, -s * 2, -s * 8, s * 2, -s * 4, s * 5);
+                confettiCtx.bezierCurveTo(-s * 2, s * 7, 0, s * 6, 0, s * 7);
+                confettiCtx.bezierCurveTo(0, s * 6, s * 2, s * 7, s * 4, s * 5);
+                confettiCtx.bezierCurveTo(s * 8, s * 2, s * 4, -s * 2, 0, s * 2);
+                confettiCtx.fill();
+            }
+            confettiCtx.restore();
+        }
+
+        function animateConfetti() {
+            confettiCtx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+            confettiParticles = confettiParticles.filter(p => p.alpha > 0.02);
+            confettiParticles.forEach(p => {
+                p.x += p.vx;
+                p.y += p.vy;
+                p.vy += p.gravity;
+                p.vx *= 0.99;
+                p.rot += p.rotSpeed;
+                p.alpha -= p.decay;
+                if (p.y > confettiCanvas.height) p.alpha = 0;
+                drawParticle(p);
+            });
+            if (confettiParticles.length > 0) requestAnimationFrame(animateConfetti);
+            else {
+                confettiCanvas.style.display = 'none';
+                confettiRunning = false;
+            }
+        }
+
+        function burstConfetti(x, y, count, fromTop) {
+            confettiCanvas.style.display = 'block';
+            for (let i = 0; i < count; i++) {
+                const px = fromTop ? Math.random() * confettiCanvas.width : x + (Math.random() - 0.5) * 100;
+                const py = fromTop ? -10 : y;
+                confettiParticles.push(createParticle(px, py, !fromTop));
+            }
+            if (!confettiRunning) {
+                confettiRunning = true;
+                animateConfetti();
+            }
+        }
+
+        function triggerMiniCelebration(canvas) {
+            const rect = canvas.getBoundingClientRect();
+            const cx = rect.left + rect.width / 2;
+            const cy = rect.top + rect.height / 2;
+            burstConfetti(cx, cy, 60, false);
+        }
+
+        function triggerSuccessCelebration() {
+            // Big burst from multiple points
+            burstConfetti(confettiCanvas.width * 0.25, confettiCanvas.height * 0.5, 80, false);
+            burstConfetti(confettiCanvas.width * 0.75, confettiCanvas.height * 0.5, 80, false);
+            burstConfetti(confettiCanvas.width * 0.5, confettiCanvas.height * 0.3, 80, false);
+
+            // Rain from top
+            let rainCount = 0;
+            const rainInterval = setInterval(() => {
+                burstConfetti(0, 0, 15, true);
+                rainCount++;
+                if (rainCount > 15) clearInterval(rainInterval);
+            }, 150);
+
+            // Pulsing gold circles at card centers
+            flashGoldenRings();
+
+            // Show success message
+            const succ = document.getElementById('scratch-success');
+            succ.style.display = 'block';
+            succ.classList.add('visible');
+
+            // Scroll to success
+            setTimeout(() => succ.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            }), 300);
+        }
+
+        function flashGoldenRings() {
+            const el = document.createElement('div');
+            el.style.cssText = `
+    position:fixed; inset:0; pointer-events:none; z-index:8999;
+    display:flex; align-items:center; justify-content:center;
+  `;
+            el.innerHTML = `
+    <div style="
+      width:200px; height:200px; border-radius:50%;
+      border:4px solid #C9A04A;
+      animation:ringPulse 0.5s ease-out forwards;
+    "></div>`;
+            document.head.insertAdjacentHTML('beforeend', `
+    <style>
+      @keyframes ringPulse {
+        0%{transform:scale(0.3);opacity:1}
+        100%{transform:scale(6);opacity:0}
+      }
+    </style>`);
+            document.body.appendChild(el);
+            setTimeout(() => el.remove(), 2000);
+
+            // Second bigger ring
+            setTimeout(() => {
+                const el2 = el.cloneNode(true);
+                el2.children[0].style.borderColor = '#E8A0B0';
+                document.body.appendChild(el2);
+                setTimeout(() => el2.remove(), 2000);
+            }, 200);
+        }
+
+        // Init scratch cards
+        window.addEventListener('load', () => {
+            initScratchCard('canvas1', 1);
+            initScratchCard('canvas2', 2);
+        });
+    </script>
+</body>
+
+</html>
